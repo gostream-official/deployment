@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+
+  revx:
+    image: ghcr.io/revx-official/revx:latest
+    container_name: revx
+    volumes:
+      - ./revx/config.yaml:/etc/revx/config.yaml
+    ports:
+      - 9999:80
+    networks:
+      - gostream
+
+  tracks-primary:
+    image: ghcr.io/gostream-official/tracks:latest
+    container_name: tracks-primary
+    environment:
+      - PORT=9871
+      - MONGO_USERNAME=root
+      - MONGO_PASSWORD=example
+      - MONGO_HOST=mongo:27017
+    ports:
+      - 9871:9871
+    networks:
+      - gostream
+
+  tracks-secondary:
+    image: ghcr.io/gostream-official/tracks:latest
+    container_name: tracks-secondary
+    environment:
+      - PORT=9872
+      - MONGO_USERNAME=root
+      - MONGO_PASSWORD=example
+      - MONGO_HOST=mongo:27017
+    ports:
+      - 9872:9872
+    networks:
+      - gostream
+
+  artists:
+    image: ghcr.io/gostream-official/artists:latest
+    container_name: artists
+    environment:
+      - PORT=9873
+      - MONGO_USERNAME=root
+      - MONGO_PASSWORD=example
+      - MONGO_HOST=mongo:27017
+    ports:
+      - 9873:9873
+    networks:
+      - gostream
+
+  albums:
+    image: ghcr.io/gostream-official/albums:latest
+    container_name: albums
+    environment:
+      - PORT=9874
+      - MONGO_USERNAME=root
+      - MONGO_PASSWORD=example
+      - MONGO_HOST=mongo:27017
+    ports:
+      - 9874:9874
+    networks:
+      - gostream
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - gostream
+
+networks:
+  gostream:
+    name: gostream
+    driver: bridge

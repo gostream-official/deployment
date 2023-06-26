@@ -1,0 +1,14 @@
+# Ignore all files by default, but scan all directories
+*
+!*/
+
+# Exclude git files
+!.git*
+
+# Exclude markdown files
+!*.md
+
+# Exclude other files
+!*.yml
+!*.yaml
+!*.json

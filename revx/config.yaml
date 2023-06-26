@@ -1,0 +1,46 @@
+port: 80
+
+servers:
+
+  - name: tracks
+    context: /tracks
+    upstreams:
+      - 'http://tracks-primary:9871'
+      - 'http://tracks-secondary:9872'
+    allowed-methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    health-check:
+      endpoint: /
+      interval: 10000
+      fails: 5
+
+  - name: artists
+    context: /artists
+    upstreams:
+      - 'http://artists:9873'
+    allowed-methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    health-check:
+      endpoint: /
+      interval: 10000
+      fails: 5
+
+  - name: albums
+    context: /albums
+    upstreams:
+      - 'http://albums:9874'
+    allowed-methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    health-check:
+      endpoint: /
+      interval: 10000
+      fails: 5

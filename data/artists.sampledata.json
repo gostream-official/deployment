@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "17b14785-16b8-43f8-bf1a-9a0235e69e32",
+    "name": "David Guetta",
+    "genres": ["Dance", "Future Rave"],
+    "followers": 3000,
+    "stats": {
+      "popularity": 0.9
+    }
+  },
+  {
+    "_id": "fbf919e7-4007-4113-8620-b9b4439f7244",
+    "name": "Bebe Rexha",
+    "genres": ["Dance", "Pop"],
+    "followers": 3000,
+    "stats": {
+      "popularity": 0.6
+    }
+  },
+  {
+    "_id": "30235c12-86ca-49c9-8628-b73ae7ad7817",
+    "name": "Martin Garrix",
+    "genres": ["EDM", "Progressive House", "Future House", "Future Bass"],
+    "followers": 2000,
+    "stats": {
+      "popularity": 0.75
+    }
+  },
+  {
+    "_id": "7764c390-7794-4b30-b072-61d06bbbc450",
+    "name": "Bonn",
+    "genres": ["EDM", "Progressive House", "Pop"],
+    "followers": 500,
+    "stats": {
+      "popularity": 0.25
+    }
+  },
+  {
+    "_id": "11e32d57-4fd4-4562-9dfb-fb375d513824",
+    "name": "Ed Sheeran",
+    "genres": ["Pop"],
+    "followers": 4000,
+    "stats": {
+      "popularity": 0.95
+    }
+  },
+  {
+    "_id": "b99a1d02-4f1d-4329-8536-e92238bc63b2",
+    "name": "Dua Lipa",
+    "genres": ["Pop"],
+    "followers": 3500,
+    "stats": {
+      "popularity": 0.92
+    }
+  },
+  {
+    "_id": "e39e246f-dac7-4976-ab81-1d0c2c5b80c2",
+    "name": "Ariana Grande",
+    "genres": ["Pop"],
+    "followers": 3500,
+    "stats": {
+      "popularity": 0.93
+    }
+  }
+]

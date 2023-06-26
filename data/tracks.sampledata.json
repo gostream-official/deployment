@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "575d629b-4baa-47a7-af06-8f9ba69985b2",
+    "artistId": "17b14785-16b8-43f8-bf1a-9a0235e69e32",
+    "featuredArtistIds": ["fbf919e7-4007-4113-8620-b9b4439f7244"],
+    "title": "I'm Good (Blue)",
+    "label": "Warner Music",
+    "releaseDate": "2022-09-20T00:00:00Z",
+    "trackStats": {
+      "streams": 125000,
+      "likes": 4000
+    },
+    "audioFeatures": {
+      "key": "G Minor",
+      "tempo": 0,
+      "duration": 0,
+      "energy": 0,
+      "danceability": 0,
+      "accousticness": 0,
+      "instrumentalness": 0,
+      "liveness": 0,
+      "loudness": 0,
+      "timeSignature": 0
+    }
+  },
+  {
+    "_id": "1eb66da4-4a6d-4d9a-a49f-09d56ab0b856",
+    "artistId": "30235c12-86ca-49c9-8628-b73ae7ad7817",
+    "featuredArtistIds": ["7764c390-7794-4b30-b072-61d06bbbc450"],
+    "title": "Hurricane",
+    "label": "STMPD RCRDS",
+    "releaseDate": "2023-06-02T00:00:00Z",
+    "trackStats": {
+      "streams": 100000,
+      "likes": 3000
+    },
+    "audioFeatures": {
+      "key": "F# Major",
+      "tempo": 0,
+      "duration": 0,
+      "energy": 0,
+      "danceability": 0,
+      "accousticness": 0,
+      "instrumentalness": 0,
+      "liveness": 0,
+      "loudness": 0,
+      "timeSignature": 0
+    }
+  }
+]

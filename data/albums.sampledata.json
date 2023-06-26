@@ -1,0 +1,13 @@
+[
+    {
+        "_id": "92f3dffb-65ed-4944-a501-e49c3251719f",
+        "title": "A Random Album",
+        "trackIds": [
+            "575d629b-4baa-47a7-af06-8f9ba69985b2",
+            "1eb66da4-4a6d-4d9a-a49f-09d56ab0b856"
+        ],
+        "stats": {
+            "popularity": 0.99
+        }
+    }
+]
